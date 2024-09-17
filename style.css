@@ -39,3 +39,7 @@ h1{
     font-size: 1.5rem;
     color: white;
 }
+
+*{
+    scale: 0.1;
+}
