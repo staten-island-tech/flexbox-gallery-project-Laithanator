@@ -18,20 +18,15 @@ h1{
     gap: 10px;
 }
 
-@media (max-width:1219px) and (min-width: 500px) {
-    .container {
-        justify-content: center;
-    }
-    .card
-}
+
 
 .card {
     display: flex;
     flex-direction: column;
     background-color: blue;
-    border: 2vw solid black;
-    width: 30%;
+    border: 1vw solid black;
     min-width: 400px;
+    width: 30%;
     padding: 1vw;
     margin-top: 2%;
     box-sizing: border-box;
@@ -43,8 +38,33 @@ h1{
 }
 
 .card-heading {
-    font-size: 2vw;
+    font-size: 3vw;
     color: white;
     object-fit: cover;
 }
 
+@media (max-width:1220px)  {
+    .container {
+        justify-content: center;
+    }
+    .card{
+        width: 45%;
+        border-width: 2vw;
+    }
+    .card-heading{
+        border-width: 1.5vw;
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width:810px) {
+    .container {
+        justify-content: center;
+    }
+    .card{
+        width: 90%;
+    }
+    .card-heading{
+        font-size: 6vw;
+    }
+}
