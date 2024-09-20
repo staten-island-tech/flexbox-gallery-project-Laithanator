@@ -27,6 +27,7 @@ h1{
     border: 1vw solid black;
     min-width: 400px;
     width: 30%;
+    height: 45%;
     padding: 1vw;
     margin-top: 2%;
     box-sizing: border-box;
@@ -34,7 +35,8 @@ h1{
 }
 
 .card-img{
-    size: 1vw;
+    height: 250px;
+    width: auto;
 }
 
 .card-heading {
