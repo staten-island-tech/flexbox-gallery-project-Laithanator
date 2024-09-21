@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+font-family: "Honk", system-ui;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 html, 
 body,
 *{
@@ -12,7 +14,11 @@ body{
     background-image: url("images/background-pixel.png");
 }
 h1{
-    font-family: "Honk", system-ui;
+    font-family: "Micro 5", sans-serif;
+    background: linear-gradient(to bottom, #fff758, #fca43f, #e8382b);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent;
     font-size: 10vh;
     text-align: center;
 }
