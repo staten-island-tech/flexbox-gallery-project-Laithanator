@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
 html, 
 body,
 *{
@@ -6,8 +8,13 @@ body,
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-image: url("images/background-pixel.png");
+}
 h1{
-    font-size: 50px;
+    font-family: "Honk", system-ui;
+    font-size: 10vh;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -16,6 +23,9 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
 }
 
 
@@ -23,29 +33,33 @@ h1{
 .card {
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    border: 1vw solid black;
+    background: radial-gradient(circle, #605dff, #45098a);
+    border: 1vw solid rgb(0, 0, 0);
+    border-radius: 5%;
     min-width: 400px;
     width: 30%;
-    height: 45%;
+    height: 45vh;
     padding: 1vw;
     margin-top: 2%;
     box-sizing: border-box;
     text-align: center;
+    box-shadow: -10px 10px 20px rgb(0, 0, 0); 
 }
 
-.card-img{
-    height: 250px;
-    width: auto;
+.card-img {
+    height: 85%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .card-heading {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: white;
     object-fit: cover;
+    margin-top: 8px;
 }
 
-@media (max-width:1220px)  {
+@media (max-width:1356px) {
     .container {
         justify-content: center;
     }
@@ -55,18 +69,25 @@ h1{
     }
     .card-heading{
         border-width: 1.5vw;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
+    }
+}
+@media (max-width:1100px) {
+    .card-heading{
+        font-size: 3.75vw;
     }
 }
 
-@media (max-width:810px) {
+@media (max-width:900px) {
     .container {
         justify-content: center;
     }
     .card{
         width: 90%;
+        min-width: 100px;
     }
     .card-heading{
         font-size: 6vw;
+        margin-top: 0px;
     }
 }
