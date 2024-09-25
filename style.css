@@ -98,10 +98,10 @@ h1{
 }
 
 #card-img-5:hover{
-    blur: 10px;
+    filter: blur(10px);
 }
 
-#card-1{
+#card-1:hover{
     position: relative;
     animation: colors 7.5s  ease-in-out;
 }
@@ -136,7 +136,7 @@ h1{
 
 @keyframes colors{
     0%{
-        left: 50%;
+        left: 10%;
         bottom: 10%;
     }
     25%{
